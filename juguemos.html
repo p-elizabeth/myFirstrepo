@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Trabajo Final</title>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html">inicio</a>
+        <ul class="menu">
+            <li class="itemMenu">
+                <a class="itemLink" href="./historia.html">HISTORIA</a>
+            </li>
+            <li class="itemMenu" href="./juguemos.html">
+                <a class="itemLink" href="./juguemos.html">JUGUEMOS</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="tituloJuego">JUGUEMOS UN POCO</h1>
+    </header>
+    <main>
+        <h2 class="puzzleTitle">Armemos el rompecabezas y veamos qué imagen es...</h2>
+        <section class="juego">
+            <div class="cajas">
+                <div class="caja" id="soltarCaja">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div hover class="caja">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div class="caja" id="soltarCaja3">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+            </div>
+
+            <div id="puzzleImages">
+                <img id="image3" src="./imagenes/Rompe3.png" alt="imagen pieza de rompezabezas">
+                <img id="image1" src="./imagenes/Rompe1.png" alt="imagen pieza de rompezabezas">
+                <img id="image2" src="./imagenes/Rompe2.png" alt="imagen pieza de rompezabezas">
+            </div>
+            <button onclick="reinicio()" class="botonReinicio">Reiniciar</button>
+        </section>
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
